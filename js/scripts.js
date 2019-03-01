@@ -4,7 +4,7 @@ function player(firstName,secondName){
   this.firstName=firstName;
   this.secondName=secondName;
 }
-
+var results=[];
 var dice1=[1,2,3,4,5,6];
 var dice2=[1,2,3,4,5,6];
 function roll1(){

@@ -23,3 +23,4 @@ function roll1(){
     return res1[index]+res2[index];
   }
 }
+var checkNow=results.includes(1);

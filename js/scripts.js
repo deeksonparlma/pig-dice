@@ -24,3 +24,6 @@ function roll1(){
   }
 }
 var checkNow=results.includes(1);
+if(checkNow===true){
+  var sent=results.unshift(0);
+}

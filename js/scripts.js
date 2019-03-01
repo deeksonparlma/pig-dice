@@ -18,12 +18,21 @@ function roll1(){
   var store4=results.unshift(result2);
   console.log(result1);
   console.log(result2);
+  
+}
+function check(){ 
+  var checkNow=results.includes(1);
+if(checkNow===true){
+  var sent=results.unshift(0);
+}
+else{
   for(var index=0;index<=results.length;index+=1){
     var total=start[0];
     return res1[index]+res2[index];
   }
+} 
+console.log(results[0]);
 }
-var checkNow=results.includes(1);
-if(checkNow===true){
-  var sent=results.unshift(0);
+function clear(){
+  console.log(results.length=0);
 }

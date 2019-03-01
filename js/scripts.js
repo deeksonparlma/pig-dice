@@ -12,4 +12,7 @@ function roll1(){
   var result2=dice2[Math.floor(Math.random() * 6)];
   var store1=results.push(result1);
   var store2=results.push(result2);
+  for(var index=0;index<results.length;index+=1){
+    console.log(results[index]+results[index+=1])
+  }
 }

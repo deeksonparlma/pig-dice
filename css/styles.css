@@ -8,8 +8,5 @@ body{
   padding: 10px;
 }
 .player{
-  height: 40px;
-}
-.secondPlayer{
-  padding-left: 100px;
+  height: 30px;
 }

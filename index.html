@@ -17,18 +17,22 @@
         <div class="form-group col-md-3">
           <form id="Start">
               <label for="playerOne">Player one</label>
-              <input type="text" class="form-control" name="" value="">
+              <input type="text" id="player1Name" class="form-control">
               <label for="playerTwo">Player Two</label>
-              <input type="text" class="form-control" name="" value=""><br>
+              <input type="text" id="player2Name" class="form-control"><br>
               <center>
                 <button type="submit" class="btn btn-success" name="button">Start Game</button>
               </center>
           </form>
         </div>
         <div id="stats" class="col-md-5">
+          <h4 class="text-info">Dashboard</h4>
           <div class="row">
             <div class="fistPlayer">
-              <img src="img/player.png" class="player" alt="">
+              <img src="img/player.png" class="player" alt=""><span id="playerOne">Player1</span>
+            </div>
+            <div class="secondPlayer">
+              <img src="img/player.png" class="player" alt=""><span id="playerTwo">Player2</span>
             </div>
           </div>
         </div>

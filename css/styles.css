@@ -10,3 +10,14 @@ body{
 .player{
   height: 30px;
 }
+.text-success{
+  font-size: 25px;
+}
+#play{
+  padding-top: 50px;
+  padding-left: 30px;
+}
+button{
+  margin: 2px;
+  width: auto;
+}

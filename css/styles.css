@@ -10,3 +10,6 @@ body{
 .player{
   height: 40px;
 }
+.secondPlayer{
+  padding-left: 100px;
+}

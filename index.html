@@ -28,29 +28,60 @@
         </div>
         <div id="stats" class="col-md-5">
           <h4 class="text-info">Dashboard</h4>
-        <div class="panel panel-info">
-          <div class="row panel-header" >
+        <div class="panel panel-info row">
+          <div class="panel-header" >
             <div class="fistPlayer">
-              .....<img src="img/player.png" class="player" alt=""><span id="playerOne">Player1</span>
+              <img src="img/player.png" class="player" alt=""><span id="playerOne">Player1</span>
             </div>
             <div class="col-md-8">
-              Rolls in this round :<span id="playerRolls"></span><br>
-              Adding :<span id="playerScore"></span> to your score
+              Adding <span id="playerScore">##</span> to your score <br>
+              live score <strong><span id="playerLiveScore"></span></strong>
             </div>
-          </div>
-          <div class="row panel-body">
-            <div class="secondPlayer">
-              <img src="img/player.png" class="player" alt=""><span id="playerTwo">Player2</span>
-            </div>
-            <div class="col-md-8">
-              Rolls in this round :<span id="playerRolls"></span><br>
-              Adding :<span id="playerScore"></span> to your score
-            </div>
+          </div><hr><br>
         </div>
+        <div class="panel panel-info row">
+          <div class="panel-header" >
+            <div class="fistPlayer">
+              <img src="img/player.png" class="player" alt=""><span id="playerOne">Player2</span>
+            </div>
+            <div class="col-md-8">
+
+              Adding <span id="playerScore2">##</span> to your score <br>
+              live score <strong><span id="playerLiveScore2"></span></strong>
+            </div>
+          </div><hr><br>
+        </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row text-info">
+          Rolls in this round :<span class="text-success" id="playerRolls"></span><br>
         </div>
       </div>
       </div>
     </div>
+  <div id="play1">
+    <div class="container">
+      <div class="row">
+        <button type="button" class="btn btn-success" name="button" onclick="roll1()">Roll</button>
+        <button class="btn btn-info" onclick="check()">Hold</button>
+        <button type="button" onclick="clear()" name="button">Pass dice</button>
+      </div>
+    </div>
+  </div><br><br>
+  <div id="play2">
+
+    <div class="container">
+      <div class="row text-info">
+        Rolls in this round :<span class="text-success" id="playerRolls2"></span><br>
+      </div>
+      <div class="row">
+        <button type="button" class="btn btn-success" name="button" onclick="roll2()">Roll</button>
+        <button class="btn btn-info" onclick="checkk()">Hold</button>
+        <button type="button" onclick="clear2()" name="button">Pass dice</button>
+      </div>
+    </div>
+  </div>
     <script src="js/scripts.js"></script>
   </body>
 </html>

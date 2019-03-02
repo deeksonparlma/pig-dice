@@ -37,7 +37,7 @@
     }
   }
   function clear(){
-    result.length=0;
+    result.length=1;
   }
 
   //player two//
@@ -77,11 +77,25 @@
       var second=$("#secondPlayerName").val();
       $("#playerOne").text(first);
       $("#playerTwo").text(second);
+      $("#gif").slideUp(500);
+      $("#pp1").slideDown(500);
+      $("#play1").slideDown(400);
+      $("#playerDetails").hide();
     });
-    $("#diceGame").click(function(){
-      var first=$("#player1Name").val();
-      var second=$("#player2Name").val();
-      $("#playerOne").text(first);
-      $("#playerTwo").text(second);
+    $("#trans1").click(function(){
+      $("#play1").slideUp(200);
+      $("#play2").slideDown(200);
+      $("#pp2").slideDown(800);
+      $("#pp1").slideUp(800);
+      $("#secplayer").slideDown();
+      $("#roller1").hide();
+    });
+    $("#trans2").click(function(){
+      $("#pp2").slideUp(200);
+      $("#pp1").slideDown(800);
+      $(".secplayer").slideUp(200);
+      $("#play1").slideDown(400);
+      $("#play2").slideUp(400);
+      $(".fistPlayer").slideDown(400);
     });
   });

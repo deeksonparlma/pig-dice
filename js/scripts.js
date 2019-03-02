@@ -70,3 +70,18 @@
     results2.length=1;
     result.length=1;
   }
+  $(document).ready(function(){
+    $("form#playerDetails").submit(function(event){
+      event.preventDefault();
+      var first=$("#firstPlayerName").val();
+      var second=$("#secondPlayerName").val();
+      $("#playerOne").text(first);
+      $("#playerTwo").text(second);
+    });
+    $("#diceGame").click(function(){
+      var first=$("#player1Name").val();
+      var second=$("#player2Name").val();
+      $("#playerOne").text(first);
+      $("#playerTwo").text(second);
+    });
+  });

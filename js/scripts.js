@@ -5,8 +5,10 @@
     this.secondName=secondName;
   }
   var result=[];
+  var results2=[];
   var liveScores=[0];
   var totals=[0,0];
+  var totals2=[0,0];
   var dice1=[1,2,3,4,5,6];
   var dice2=[1,2,3,4,5,6];
 
@@ -35,5 +37,36 @@
     }
   }
   function clear(){
-    document.getElementById("playerRolls").innerHTML=result[lastindex];
+    result.length=0;
+  }
+
+  //player two//
+
+  function roll2(){
+    var result3=results2.unshift(dice1[Math.floor(Math.random() * 6)]);
+    var result4=results2.unshift(dice2[Math.floor(Math.random() * 6)]);
+    var rollNumbers2=results2;
+    document.getElementById("playerRolls2").innerHTML=rollNumbers2;
+  }
+  function checkk(){
+    var fail=0;
+    var checkNow=results2.includes(1);
+       if(checkNow===false){
+        for (var i = 0, sum = 0; i < results2.length;
+          totals2.unshift(sum += results2[i++]));
+          document.getElementById("playerScore2").innerHTML=totals2[0]+ 0;
+          liveScores.unshift(totals2[0]);
+          var store=totals2[0] + results2[0];
+          document.getElementById("playerLiveScore2").innerHTML=store;
+
+  }
+  else{
+    totals2.unshift(fail);
+    document.getElementById("playerScore2").innerHTML=totals2[0];
+    document.getElementById("playerLiveScore2").innerHTML=totals2[0] + totals2[1];
+    }
+  }
+  function clear2(){
+    results2.length=1;
+    result.length=1;
   }

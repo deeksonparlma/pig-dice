@@ -12,6 +12,7 @@
   var dice1=[1,2,3,4,5,6];
   var dice2=[1,2,3,4,5,6];
 
+
   //player one//
 
   function roll1(){
@@ -73,14 +74,20 @@
   $(document).ready(function(){
     $("form#playerDetails").submit(function(event){
       event.preventDefault();
-      var first=$("#firstPlayerName").val();
-      var second=$("#secondPlayerName").val();
-      $("#playerOne").text(first);
-      $("#playerTwo").text(second);
+      var firstN=$("#firstPlayerName").val();
+      var secondN=$("#secondPlayerName").val();
+      $("#playerOne").text(firstN);
+      $("#playerTwo").text(secondN);
       $("#gif").slideUp(500);
       $("#pp1").slideDown(500);
       $("#play1").slideDown(400);
       $("#playerDetails").hide();
+
+      //prototypes for players//
+      var p1=new player(firstN,secondN);
+      $("#conquest").append( p1.firstName +" "+"You're playing against"+" "+ p1.secondName);
+      $("#conquest").slideDown(1000);
+
     });
     $("#trans1").click(function(){
       $("#play1").slideUp(200);

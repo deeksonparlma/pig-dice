@@ -21,3 +21,9 @@ button{
   margin: 2px;
   width: auto;
 }
+#pp1,#pp2,#play1,#play2{
+  display: none;
+}
+.icon{
+  height: 200px;
+}

@@ -1,0 +1,12 @@
+body{
+  background-image: url("../img/dice.jpg");
+  background-position: right;
+}
+#Start{
+  background-color: blue;
+  opacity:0.5;
+  padding: 10px;
+}
+.player{
+  height: 40px;
+}

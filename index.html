@@ -16,13 +16,13 @@
       <div class="container">
       <div class="row">
         <div class="form-group col-md-3">
-          <form id="Start">
+          <form id="playerDetails">
               <label for="playerOne">Player one</label>
-              <input type="text" id="player1Name" class="form-control">
+              <input type="text" id="firstPlayerName" class="form-control">
               <label for="playerTwo">Player Two</label>
-              <input type="text" id="player2Name" class="form-control"><br>
+              <input type="text" id="secondPlayerName" class="form-control"><br>
               <center>
-                <button type="submit" class="btn btn-success" name="button">Start Game</button>
+                <button type="submit" id="diceGame" class="btn btn-success" name="button">Start Game</button>
               </center>
           </form>
         </div>
@@ -31,23 +31,23 @@
         <div class="panel panel-info row">
           <div class="panel-header" >
             <div class="fistPlayer">
-              <img src="img/player.png" class="player" alt=""><span id="playerOne">Player1</span>
+              <img src="img/player.png" class="player" alt=""><p id="playerOne">Player1</p>
             </div>
             <div class="col-md-8">
-              Adding <span id="playerScore">##</span> to your score <br>
-              live score <strong><span id="playerLiveScore"></span></strong>
+              Adding <div id="playerScore">##</div> to your score <br>
+              live score <strong><div id="playerLiveScore"></div></strong>
             </div>
           </div><hr><br>
         </div>
         <div class="panel panel-info row">
           <div class="panel-header" >
             <div class="fistPlayer">
-              <img src="img/player.png" class="player" alt=""><span id="playerOne">Player2</span>
+              <img src="img/player.png" class="player" alt=""><p id="playerTwo">Player2</p>
             </div>
             <div class="col-md-8">
 
-              Adding <span id="playerScore2">##</span> to your score <br>
-              live score <strong><span id="playerLiveScore2"></span></strong>
+              Adding <div id="playerScore2">##</div> to your score <br>
+              live score <strong><div id="playerLiveScore2"></div></strong>
             </div>
           </div><hr><br>
         </div>
@@ -82,6 +82,7 @@
       </div>
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

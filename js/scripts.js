@@ -96,6 +96,19 @@ else{
 function clear2(){
 
 }
+if(totals2[0] >=100){
+  var firstN=$("#firstPlayerName").val();
+  var secondN=$("#secondPlayerName").val();
+  var winner=new player(firstN,secondN);
+  $("#conquest").append( winner.firstName +" "+"You've lost to"+" "+ winner.secondName);
+  $("#conquest").append(winner.secondName+" "+" You've won");
+  $("#conquest").slideDown(1000);
+}
+else if (totals[0] >=100) {
+  $("#conquest").append( winner.secondName +" "+"You've lost to"+" "+ winner.firstName);
+  $("#conquest").append(winner.firstName+" "+" You've won");
+  $("#conquest").slideDown(1000);
+}
 $(document).ready(function(){
   $("form#playerDetails").submit(function(event){
     event.preventDefault();

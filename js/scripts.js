@@ -32,6 +32,10 @@ function check(){
         document.getElementById("playerScore").innerHTML=totals[0];
         document.getElementById("playerLiveScore").innerHTML=totals[0];
         liveScores.unshift(totals[0]);
+        if (totals[0] >=100) {
+          $("#conquest").append("You Won");
+          $("#conquest").slideDown(1000);
+        }
 }
 else{
   $("#attempt1").hide();
@@ -77,6 +81,10 @@ function checkk(){
         liveScores.unshift(totals2[0]);
         var store=totals2[0] ;
         document.getElementById("playerLiveScore2").innerHTML=store;
+        if (totals2[0] >=100) {
+          $("#conquest").append("You Won");
+          $("#conquest").slideDown(1000);
+        }
 
 }
 else{
@@ -96,19 +104,7 @@ else{
 function clear2(){
 
 }
-if(totals2[0] >=100){
-  var firstN=$("#firstPlayerName").val();
-  var secondN=$("#secondPlayerName").val();
-  var winner=new player(firstN,secondN);
-  $("#conquest").append( winner.firstName +" "+"You've lost to"+" "+ winner.secondName);
-  $("#conquest").append(winner.secondName+" "+" You've won");
-  $("#conquest").slideDown(1000);
-}
-else if (totals[0] >=100) {
-  $("#conquest").append( winner.secondName +" "+"You've lost to"+" "+ winner.firstName);
-  $("#conquest").append(winner.firstName+" "+" You've won");
-  $("#conquest").slideDown(1000);
-}
+
 $(document).ready(function(){
   $("form#playerDetails").submit(function(event){
     event.preventDefault();

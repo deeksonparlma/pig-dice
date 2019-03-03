@@ -29,7 +29,7 @@ function check(){
      if(checkNow===false){
       for (var i = 0, sum = 0; i < result.length;
         totals.unshift(sum += result[i++]));
-        document.getElementById("playerScore").innerHTML=totals[0]+ 0;
+        document.getElementById("playerScore").innerHTML=totals[0];
         document.getElementById("playerLiveScore").innerHTML=totals[0];
         liveScores.unshift(totals[0]);
 }
@@ -73,9 +73,9 @@ function checkk(){
      if(checkNow===false){
       for (var i = 0, sum = 0; i < results2.length;
         totals2.unshift(sum += results2[i++]));
-        document.getElementById("playerScore2").innerHTML=totals2[0]+ 0;
+        document.getElementById("playerScore2").innerHTML=totals2[0];
         liveScores.unshift(totals2[0]);
-        var store=totals2[0] + results2[0];
+        var store=totals2[0] ;
         document.getElementById("playerLiveScore2").innerHTML=store;
 
 }

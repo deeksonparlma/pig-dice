@@ -22,6 +22,8 @@ function roll1(){
   document.getElementById("playerRolls").innerHTML=rollNumbers;
 }
 function check(){
+  $("#attempt1").hide();
+  $("#sum1").hide();
   var fail=0;
   var checkNow=result.includes(1);
      if(checkNow===false){
@@ -64,6 +66,8 @@ function roll2(){
   document.getElementById("playerRolls2").innerHTML=rollNumbers2;
 }
 function checkk(){
+  $("#attempt2").hide();
+  $("#sum2").hide();
   var fail=0;
   var checkNow=results2.includes(1);
      if(checkNow===false){
@@ -117,6 +121,8 @@ $(document).ready(function(){
     $("#pp1").slideUp(800);
     $("#secplayer").slideDown();
     $("#roller1").hide();
+    $("#attempt2").show();
+    $("#sum2").show();
   });
   $("#trans2").click(function(){
     $("#pp2").slideUp(200);
@@ -125,5 +131,7 @@ $(document).ready(function(){
     $("#play1").slideDown(400);
     $("#play2").slideUp(400);
     $(".fistPlayer").slideDown(400);
+    $("#attempt1").show();
+    $("#sum1").show();
   });
 });

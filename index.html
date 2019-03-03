@@ -67,8 +67,8 @@
           </div>
         <div class="container">
           <div class="row">
-            <button type="button" class="btn btn-success" name="button" onclick="roll1()">Roll</button>
-            <button class="btn btn-info" onclick="check()">Hold</button>
+            <button type="button" id="attempt1" class="btn btn-success" name="button" onclick="roll1()">Roll</button>
+            <button class="btn btn-info" onclick="check()" id="sum1">Hold</button>
             <button type="button" class="btn btn-info" id="trans1" onclick="clear()" name="button">Pass dice</button>
           </div>
     </div>
@@ -79,8 +79,8 @@
         Rolls in this round :<span class="text-success" id="playerRolls2"></span><br>
       </div>
       <div class="row">
-        <button type="button" class="btn btn-success" name="button" onclick="roll2()">Roll</button>
-        <button class="btn btn-info" onclick="checkk()">Hold</button>
+        <button type="button" class="btn btn-success" name="button" onclick="roll2()" id="attempt2">Roll</button>
+        <button class="btn btn-info" onclick="checkk()" id="sum2">Hold</button>
         <button type="button" id="trans2" onclick="clear2()" name="button" class="btn btn-info">Pass dice</button>
       </div>
     </div>

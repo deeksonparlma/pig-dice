@@ -33,8 +33,9 @@ function check(){
         document.getElementById("playerLiveScore").innerHTML=totals[0];
         liveScores.unshift(totals[0]);
         if (totals[0] >=100) {
-          $("#conquest").append("You Won");
+          $("#conquest").text("You Won");
           $("#conquest").slideDown(1000);
+          $("button").prop('disabled',true);
         }
 }
 else{
@@ -82,8 +83,9 @@ function checkk(){
         var store=totals2[0] ;
         document.getElementById("playerLiveScore2").innerHTML=store;
         if (totals2[0] >=100) {
-          $("#conquest").append("You Won");
+          $("#conquest").text("You Won");
           $("#conquest").slideDown(1000);
+          $("button").prop('disabled',true);
         }
 
 }

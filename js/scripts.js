@@ -32,6 +32,8 @@ function check(){
         liveScores.unshift(totals[0]);
 }
 else{
+  $("#attempt1").hide();
+  $("#sum1").hide();
   result.forEach(function(res){
     var index = result.indexOf(1);
 
@@ -44,8 +46,6 @@ else{
   }
 }
 function clear(){
-  $("#attempt1").hide();
-  $("#sum1").hide();
   result.forEach(function(res){
     var index = result.indexOf(1);
 

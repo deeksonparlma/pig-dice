@@ -32,13 +32,25 @@ function check(){
         liveScores.unshift(totals[0]);
 }
 else{
-  totals.unshift(fail);
+  result.forEach(function(res){
+    var index = result.indexOf(1);
+
+      if (~index) {
+    result[index] = 0;
+  }
+  });
   document.getElementById("playerScore").innerHTML=totals[0];
-  document.getElementById("playerLiveScore").innerHTML=totals[0] + totals[2];
+  document.getElementById("playerLiveScore").innerHTML=totals[0];
   }
 }
 function clear(){
-  result.length=1;
+  result.forEach(function(res){
+    var index = result.indexOf(1);
+
+      if (~index) {
+    result[index] = 0;
+  }
+  });
 }
 
 //player two//
@@ -62,14 +74,19 @@ function checkk(){
 
 }
 else{
-  totals2.unshift(fail);
+  results2.forEach(function(res){
+    var index = results2.indexOf(1);
+
+      if (~index) {
+    results2[index] = 0;
+  }
+  });
   document.getElementById("playerScore2").innerHTML=totals2[0];
-  document.getElementById("playerLiveScore2").innerHTML=totals2[0] + totals2[1];
+  document.getElementById("playerLiveScore2").innerHTML=totals2[0];
   }
 }
 function clear2(){
-  results2.length=1;
-  result.length=1;
+
 }
 $(document).ready(function(){
   $("form#playerDetails").submit(function(event){

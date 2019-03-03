@@ -44,6 +44,8 @@ else{
   }
 }
 function clear(){
+  $("#attempt1").hide();
+  $("#sum1").hide();
   result.forEach(function(res){
     var index = result.indexOf(1);
 
@@ -74,6 +76,8 @@ function checkk(){
 
 }
 else{
+  $("#attempt2").hide();
+  $("#sum2").hide();
   results2.forEach(function(res){
     var index = results2.indexOf(1);
 
